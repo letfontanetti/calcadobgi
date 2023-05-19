@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+    transition: all 0.5s;
+}
+
+:root {
+    --cor-roxo: #63318a;
+    --cor-magenta: #e72479;
+    --cor-amarelo: #f4b821;
+    --cor-azul: #19ADE4;
+    --cor-cinza: #F6F9FC;
+}
+
+/*---------------GRADIENTE BACKGROUND---------------*/
+
+.box-degrade {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    background: rgb(99,49,138);
+    background: linear-gradient(30deg, rgba(99,49,138,1) 8%, rgba(231,36,121,1) 36%, rgba(25,173,228,1) 67%, rgba(244,184,33,1) 100%);
+    background-size: 600% 100%;
+    animation: degrade-animado 8s infinite alternate;
+}
+
+.box-degrade h1 {
+    font-size: 50px;
+    padding: 30px;
+    color: black;
+    opacity: .8;
+    margin-right: 30px;
+}
+
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+.top {
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 106px),0 100%);
+}
+.bottom {
+  clip-path: polygon(0 106px,100% 0,100% 100%,0 100%);
+  margin-top: -50px;
+}
+
+/*---------------PRIMEIRA DIV---------------*/
+
+.div1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.div1 .text1 {
+    position: relative;
+    margin-top: 90px;
+    margin-left: 35px;
+    font-size: 23px;
+    width: 500px;
+    color: #425466;
+}
+
+.valores img{
+    margin-left: 200px;
+    margin-top: 100px;
+    width: 350px;
+    height: 350px;
+}
+
+.valores {
+    position: relative;
+}
+
+.valores img.icon {
+    margin: 0; 
+}
+
+.valores .amor{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 23px;
+    left: 200px;
+}
+
+.valores .abraco{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: -3px;
+    left: 395px;
+}
+
+.valores .esporte{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 99px;
+    left: 550px;
+}
+
+.valores .parque{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 286px;
+    left: 565px;
+}
+
+.valores .perola{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 445px;
+    left: 440px;
+}
+
+.valores .guarana{
+    width: 130px;
+    height: auto;
+    position: absolute;
+    top: 213px;
+    left: 313px;
+}
+
+.valores .fabrica{
+    width: 130px;
+    height: auto;
+    position: absolute;
+    top: 213px;
+    left: 313px;
+}
+
+.valores .laco{
+    width: 130px;
+    height: auto;
+    position: absolute;
+    top: 213px;
+    left: 313px;
+}
+
+.imagem-logo {
+    position: relative;
+    z-index: 999;
+}
+
+/*---------------SEGUNDA DIV---------------*/
+
+.imagem-logo:hover ~ .fabrica {
+    top: 326px;
+    left: 80px;
+}
+
+.imagem-logo:hover ~ .laco {
+    top: 162px;
+    left: 67px;
+}
+
+.imagem-logo:hover ~ .guarana {
+    top: 442px;
+    left: 220px;
+}
